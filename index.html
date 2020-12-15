@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
 
     <style>
         *{
@@ -18,6 +20,10 @@
 
         body{
             overflow-x: hidden;
+        }
+
+        .jumbotron{
+            margin-bottom: 0 !important;
         }
 
         .btn-bg-main{
@@ -113,6 +119,12 @@
             }
         }
 
+        @media (min-width: 1000px){
+            .owl-nav{
+                display: none !important;
+            }
+        }
+
         .hero h2{
             font-size: 65px;
             font-weight: bold;
@@ -157,6 +169,67 @@
             float: left;
             margin-right: 10px;
         }
+
+        .clients{
+            display: flex;
+            background-color: #F0F3F6;
+            align-items: center;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            margin-bottom: 4em;
+        }
+
+        .clients .owl-stage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients .owl-item{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .owl-nav button {
+            border: 0;
+            outline: none;
+            background: none;
+            padding: 0;
+            width: 52px;
+            height: 60px;
+        }
+
+        .owl-prev span{
+            font-size: 85px;
+            position: absolute;
+            top: -40px;
+            margin: 0;
+            left: 10px;
+            color: #B4B4B4;
+        }
+
+        .owl-next span{
+            font-size: 85px;
+            position: absolute;
+            top: -40px;
+            margin: 0;
+            right: 10px;
+            color: #B4B4B4;
+        }
+
+        .owl-nav button:focus{
+            border: 0;
+            outline: none;
+        }
     </style>
 </head>
 
@@ -177,6 +250,14 @@
             </div>
         </div>
     </div>
+
+    <div class="clients">
+        <div><img src="img/client1.png"></div>
+        <div><img src="img/client2.png"></div>
+        <div><img src="img/client3.png"></div>
+        <div><img src="img/client4.png"></div>
+        <div><img src="img/client5.png"></div>
+      </div>
 
     <section class="text-center testimonials">
         <h2 class="text-center h3blue" style="margin-bottom: 20px;" data-aos="fade-down" data-aos-delay="550" data-aos-duration="1000">5 Ways The eFax Android App Works For You</h2>
@@ -412,8 +493,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         AOS.init();
+        $('.clients').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:true
+                },
+                992:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
     </script>
 </body>
 

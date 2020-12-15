@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     
 
     <style>
         *{
             font-family: 'Open Sans', sans-serif;
             font-size: 16px;
-        }
-
-        body{
-            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         .jumbotron{
@@ -52,6 +50,7 @@
             color: #006699;
             font-size: 40px;
             font-weight: bold;
+            margin-bottom: 30px;
         }
 
         p{
@@ -75,7 +74,6 @@
 
         .hero .container{
             margin-top: 5em;
-            margin-bottom: 5em;
         }
 
         .logoplaygoogle{
@@ -102,8 +100,6 @@
                 flex-wrap: nowrap;
                 align-items: flex-start;
                 flex-direction: column;
-                transform: translateX(50%);
-                margin-left: -65%;
             }
 
             .h3blue{
@@ -116,12 +112,6 @@
 
             .secnormal button{
                 margin: auto;
-            }
-        }
-
-        @media (min-width: 1000px){
-            .owl-nav{
-                display: none !important;
             }
         }
 
@@ -171,64 +161,56 @@
         }
 
         .clients{
-            display: flex;
-            background-color: #F0F3F6;
-            align-items: center;
             padding-top: 35px;
             padding-bottom: 35px;
-            margin-bottom: 4em;
         }
 
-        .clients .owl-stage{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .clients .owl-item{
+        .slick-slide img {
             margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        .owl-nav{
+        .slick-list{
+            margin: auto;
+        }
+
+        .celph{
+            margin: auto;
+        }
+
+        .prev{
             position: absolute;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .owl-nav button {
-            border: 0;
-            outline: none;
-            background: none;
-            padding: 0;
-            width: 52px;
+            z-index: 100;
+            width: 60px;
             height: 60px;
-        }
-
-        .owl-prev span{
-            font-size: 85px;
-            position: absolute;
-            top: -40px;
-            margin: 0;
-            left: 10px;
-            color: #B4B4B4;
-        }
-
-        .owl-next span{
-            font-size: 85px;
-            position: absolute;
-            top: -40px;
-            margin: 0;
-            right: 10px;
-            color: #B4B4B4;
-        }
-
-        .owl-nav button:focus{
+            left: 0;
+            top: 20px;
             border: 0;
+            background: no-repeat;
             outline: none;
+            font-size: 3em;
+            color: #B4B4B4;
+            text-align: left;
+            cursor: pointer;
+            padding-left: 11px;
+            font-weight: 600;
+        }
+
+        .next{
+            position: absolute;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            right: 0;
+            top: 20px;
+            border: 0;
+            background: no-repeat;
+            outline: none;
+            font-size: 3em;
+            color: #B4B4B4;
+            text-align: right;
+            cursor: pointer;
+            padding-right: 11px;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -250,18 +232,21 @@
             </div>
         </div>
     </div>
-
-    <div class="clients">
-        <div><img src="img/client1.png"></div>
-        <div><img src="img/client2.png"></div>
-        <div><img src="img/client3.png"></div>
-        <div><img src="img/client4.png"></div>
-        <div><img src="img/client5.png"></div>
-      </div>
-
-    <section class="text-center testimonials">
+    <DIV style="position: relative; border-bottom: 1px solid #707070; margin-bottom: 4em;">
+        <div class="prev"><</div>
+        <div class="clients container">
+            <div><img src="img/client1.png"></div>
+            <div><img src="img/client2.png"></div>
+            <div><img src="img/client3.png"></div>
+            <div><img src="img/client4.png"></div>
+            <div><img src="img/client5.png"></div>
+        </div>
+        <div class="next">></div>
+    </DIV>
+    
+    <section class="text-center testimonials container">
         <h2 class="text-center h3blue" style="margin-bottom: 20px;" data-aos="fade-down" data-aos-delay="550" data-aos-duration="1000">5 Ways The eFax Android App Works For You</h2>
-        <p style="margin-bottom: 30px;" data-aos="fade-down" data-aos-delay="650" data-aos-duration="1200">Now you can take your business on the run and close deals using your Android phone or tablet. Discover how the intuitive interface of the Android fax app lets you view, edit, sign and send a fax quickly and easily from any location.</p>
+        <p style="margin-bottom: 30px;" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1200">Now you can take your business on the run and close deals using your Android phone or tablet. Discover how the intuitive interface of the Android fax app lets you view, edit, sign and send a fax quickly and easily from any location.</p>
         <img class="logoplaygoogle" src="img/googleplaybutton.png" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1300">
         <button class="btn btn-lg text-center btn-bg-main" type="button" style="margin-left: 20px;" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">Start Faxing Now</button>
             <img class="img-responsive" src="img/EfaxAndroidApp.png" style="margin: auto;margin-top: 40px;" data-aos="fade-up" data-aos-delay="150">
@@ -271,7 +256,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/send-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/send-a-fax-mobile.png">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Send a Fax</h3>
@@ -297,12 +282,12 @@
                         </div>
                     </div>
                     <p>Whether you’re on the road, at home or in the office, the Android fax app gets your time-sensitive documents such as invoices or contracts delivered fast.</p>
-                    <img src="img/section1_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1200">
+                    <img src="img/section1_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/send-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/send-a-fax-mobile.png">
                 </div>
             </div>
         </div>
@@ -335,12 +320,12 @@
                         </div>
                     </div>
                     <p>When a signature is required and you need to turn paperwork around fast, look no further than your Android phone or tablet with the eFax app.</p>
-                    <img src="img/section2_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1200">
+                    <img src="img/section2_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/sign-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/sign-a-fax-mobile.png">
                 </div>
             </div>
         </div>
@@ -351,7 +336,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/Take-a-Photo-and-Fax-mobile.png">
+                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.png">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Take a Photo and Fax</h3>
@@ -377,12 +362,12 @@
                         </div>
                     </div>
                     <p>Even when dealing with physical documents, you don’t need any extra equipment. Just point, shoot and fax!</p>
-                    <img src="img/section3_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1200">
+                    <img src="img/section3_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/Take-a-Photo-and-Fax-mobile.png">
+                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.png">
                 </div>
             </div>
         </div>
@@ -415,12 +400,12 @@
                         </div>
                     </div>
                     <p>Attaching documents to send by fax has never been easier.</p>
-                    <img src="img/section4_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1200">
+                    <img src="img/section4_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/share-file-mobile.png">
+                    <img class="img-responsive celph" src="img/share-file-mobile.png">
                 </div>
             </div>
         </div>
@@ -431,7 +416,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/store-faxes-online-mobile.png">
+                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.png">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Store Faxes Online</h3>
@@ -457,12 +442,12 @@
                         </div>
                     </div>
                     <p>Having important faxes at your fingertips can be invaluable when you need to refer to a document during a meeting or phone call.</p>
-                    <img src="img/section5_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1200">
+                    <img src="img/section5_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img src="img/store-faxes-online-mobile.png">
+                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.png">
                 </div>
             </div>
         </div>
@@ -492,31 +477,53 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
-        AOS.init();
-        $('.clients').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            autoplay: true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:3,
-                    nav:true
-                },
-                992:{
-                    items:5,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
+        $('.clients').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+
+    
     </script>
 </body>
 

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.961" height="32.917" viewBox="0 0 33.961 32.917">
+  <g id="Grupo_7679" data-name="Grupo 7679" transform="translate(-329.289 -3157.333)">
+    <g id="_003-paper" data-name="003-paper" transform="translate(298.289 3157.333)">
+      <g id="Grupo_7678" data-name="Grupo 7678" transform="translate(31)">
+        <path id="Trazado_17577" data-name="Trazado 17577" d="M38.656,0V3.828H34.828V7.656H31v25.01H52.055V26.8h3.828V22.969h3.828V0ZM50.141,30.753H32.914V9.57H44.4v5.742h5.742Zm0-17.354H46.313V9.57h.561l3.268,3.267Zm3.828,11.484H52.055V12.045L47.666,7.656H36.742V5.742H53.969ZM57.8,21.055H55.883V3.828H40.57V1.914H57.8Z" transform="translate(-31)" fill="#069"/>
+      </g>
+    </g>
+    <path id="Icon_ionic-md-close-circle" data-name="Icon ionic-md-close-circle" d="M9,3.375A5.625,5.625,0,1,0,14.625,9,5.606,5.606,0,0,0,9,3.375Zm2.813,7.65-.787.787L9,9.787,6.975,11.812l-.788-.787L8.213,9,6.187,6.975l.788-.787L9,8.213l2.025-2.025.788.787L9.787,9Z" transform="translate(348.625 3175.625)" fill="#3599e4"/>
+  </g>
+</svg>

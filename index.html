@@ -27,6 +27,7 @@
         .btn-bg-main{
             background-color: #cc0000;
             width: 301px;
+            height: 61px;
             font-size: 26px;
             font-weight: normal;
             filter: brightness(100%) saturate(100%);
@@ -59,10 +60,12 @@
             font-weight: normal;
         }
 
-        .hero{
-            background-image: url(img/hero.png);
+        .hero {
+            background-image: url(img/hero.svg);
             color: #ffffff;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 61%;
         }
 
         .hero p{
@@ -78,11 +81,14 @@
 
         .logoplaygoogle{
             cursor: pointer;
-            height: 54px;
             margin-right: 20px;
         }
 
         @media (max-width: 550px){
+
+            *{
+                text-align: center !important;
+            }
             
             .hero .container{
                 margin-top: 2em;
@@ -111,6 +117,18 @@
             justify-content: center;
             margin-left: 50%;
             transform: translateX(-50%);
+        }
+
+        .btn-bg-main{
+            margin: auto;
+        }
+
+        .hero h2{
+            font-size: 55px !important;
+        }
+
+        .hero h3{
+            font-size: 26px !important;
         }
 
         }
@@ -268,30 +286,30 @@
         </div>
     </div>
     <DIV style="position: relative; border-bottom: 1px solid #707070; margin-bottom: 4em;">
-        <div class="prev"><</div>
+        <div class="prev"><img src="img/prev.svg" alt=""></div>
         <div class="clients container">
-            <div><img src="img/client1.png"></div>
-            <div><img src="img/client2.png"></div>
-            <div><img src="img/client3.png"></div>
-            <div><img src="img/client4.png"></div>
-            <div><img src="img/client5.png"></div>
+            <div><img src="img/client1.svg"></div>
+            <div><img src="img/client2.svg"></div>
+            <div><img src="img/client3.svg"></div>
+            <div><img src="img/client4.svg"></div>
+            <div><img src="img/client5.svg"></div>
         </div>
-        <div class="next">></div>
+        <div class="next"><img src="img/next.svg" alt=""></div>
     </DIV>
     
     <section class="text-center testimonials container">
         <h2 class="text-center h3blue" style="margin-bottom: 20px;" data-aos="fade-down" data-aos-delay="550" data-aos-duration="1000">5 Ways The eFax Android App Works For You</h2>
         <p style="margin-bottom: 30px;" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1200">Now you can take your business on the run and close deals using your Android phone or tablet. Discover how the intuitive interface of the Android fax app lets you view, edit, sign and send a fax quickly and easily from any location.</p>
-        <img class="logoplaygoogle" src="img/googleplaybutton.png" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1300">
+        <img class="logoplaygoogle" src="img/googleplaybutton.svg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1300">
         <button class="btn btn-lg text-center btn-bg-main" type="button" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">Start Faxing Now</button>
-            <img class="img-responsive" src="img/EfaxAndroidApp.png" style="margin: auto;margin-top: 40px;" data-aos="fade-up" data-aos-delay="150">
+            <img class="img-responsive" src="img/EfaxAndroidApp.svg" style="margin: auto;margin-top: 40px;" data-aos="fade-up" data-aos-delay="150">
     </section>
 
     <section id="section1" class="secgris">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/send-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/send-a-fax-mobile.svg">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Send a Fax</h3>
@@ -299,33 +317,33 @@
                     <div class="row iconmods">
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section1_icon1.png">
+                                <img src="img/section1_icon1.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Fax on the go from anywhere</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section1_icon2.png">
+                                <img src="img/section1_icon2.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Quickly send faxes with a few taps</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section1_icon3.png">
+                                <img src="img/section1_icon3.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>No more looking for a fax machine to use</p>
                         </div>
                     </div>
                     <p>Whether you’re on the road, at home or in the office, the Android fax app gets your time-sensitive documents such as invoices or contracts delivered fast.</p>
-                    <img src="img/section1_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
+                    <img src="img/section1_commentary.svg" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/send-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/send-a-fax-mobile.svg">
                 </div>
             </div>
         </div>
@@ -340,33 +358,33 @@
                     <div class="row iconmods">
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section2_icon1.png">
+                                <img src="img/section2_icon1.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Sign fax documents anytime, anywhere</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section2_icon2.png">
+                                <img src="img/section2_icon2.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Save signatures for later use</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section2_icon3.png">
+                                <img src="img/section2_icon3.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>No printing or scanning required</p>
                         </div>
                     </div>
                     <p>When a signature is required and you need to turn paperwork around fast, look no further than your Android phone or tablet with the eFax app.</p>
-                    <img src="img/section2_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
+                    <img src="img/section2_commentary.svg" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/sign-a-fax-mobile.png">
+                    <img class="img-responsive celph" src="img/sign-a-fax-mobile.svg">
                 </div>
             </div>
         </div>
@@ -377,7 +395,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.png">
+                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.svg">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Take a Photo and Fax</h3>
@@ -385,33 +403,33 @@
                     <div class="row iconmods">
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section3_icon1.png">
+                                <img src="img/section3_icon1.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>No need to find a scanner to use</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section3_icon2.png">
+                                <img src="img/section3_icon2.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Photos automatically compress to send easily</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section3_icon3.png">
+                                <img src="img/section3_icon3.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Works with phone and tablet cameras</p>
                         </div>
                     </div>
                     <p>Even when dealing with physical documents, you don’t need any extra equipment. Just point, shoot and fax!</p>
-                    <img src="img/section3_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
+                    <img src="img/section3_commentary.svg" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.png">
+                    <img class="img-responsive celph" src="img/Take-a-Photo-and-Fax-mobile.svg">
                 </div>
             </div>
         </div>
@@ -426,33 +444,33 @@
                     <div class="row iconmods">
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section4_icon1.png">
+                                <img src="img/section4_icon1.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>No extra steps to fax files from cloud storage</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section4_icon2.png">
+                                <img src="img/section4_icon2.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Save time with easy access</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section4_icon3.png">
+                                <img src="img/section4_icon3.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Avoid moving files around</p>
                         </div>
                     </div>
                     <p>Attaching documents to send by fax has never been easier.</p>
-                    <img src="img/section4_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
+                    <img src="img/section4_commentary.svg" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/share-file-mobile.png">
+                    <img class="img-responsive celph" src="img/share-file-mobile.svg">
                 </div>
             </div>
         </div>
@@ -463,7 +481,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 text-center hidden-xs hidden-sm visible-md visible-lg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.png">
+                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.svg">
                 </div>
                 <div class="col-lg-7 col-md-7"  data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h3 class="h3blue">Store Faxes Online</h3>
@@ -471,57 +489,57 @@
                     <div class="row iconmods">
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section5_icon1.png">
+                                <img src="img/section5_icon1.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Faxes are stored for the life of your account</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section5_icon2.png">
+                                <img src="img/section5_icon2.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>Tag faxes to easily search for them later</p>
                         </div>
                         <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
-                                <img src="img/section5_icon3.png">
+                                <img src="img/section5_icon3.svg">
                             </div>
                             <img class="separation" src="img/separacion.svg" alt="">
                             <p>No limit on the number of faxes saved</p>
                         </div>
                     </div>
                     <p>Having important faxes at your fingertips can be invaluable when you need to refer to a document during a meeting or phone call.</p>
-                    <img src="img/section5_commentary.png" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
+                    <img src="img/section5_commentary.svg" style="margin-top: 25px;margin-bottom: 25px;" class="img-responsive">
                     <div class="clearfix"></div>
                     <button class="btn btn-block text-center btn-bg-main" type="button">Start Faxing Now</button>
                 </div>
                 <div class="col-lg-5 col-md-5 text-center hidden-md hidden-lg visible-xs visible-sm" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.png">
+                    <img class="img-responsive celph" src="img/store-faxes-online-mobile.svg">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="text-center testimonials secnormal">
-        <img src="img/papersection.png" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+        <img src="img/papersection.svg" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
         <h3 class="h3blue" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1000">What Else Can the Mobile App Do?</h3>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1 col-md-12 elsedo" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <img src="img/checksection.png">
+                    <img src="img/checksection.svg">
                     <p>Print faxes over WiFi</p>
                 </div>
                 <div class="col-lg-3 col-lg-offset-0 col-md-12 elsedo" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <img src="img/checksection.png">
+                    <img src="img/checksection.svg">
                     <p>Add notes to your fax</p>
                 </div>
                 <div class="col-lg-3 col-lg-offset-0 col-md-12 elsedo" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <img src="img/checksection.png">
+                    <img src="img/checksection.svg">
                     <p>Access phone’s contact list</p>
                 </div>
                 <div class="clearfix"></div>
-                <button class="btn btn-block btn-lg text-center btn-bg-main" type="button" style="width: 377px;font-size: 22px;margin: auto;margin-top: 20px;" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1000">Start Faxing Online Now</button>
+                <button class="btn btn-block btn-lg text-center btn-bg-main" type="button" style="font-size: 22px;margin: auto;margin-top: 20px;" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1000">Start Faxing Online Now</button>
             </div>
         </div>
     </section>

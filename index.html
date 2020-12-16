@@ -79,6 +79,7 @@
         .logoplaygoogle{
             cursor: pointer;
             height: 54px;
+            margin-right: 20px;
         }
 
         @media (max-width: 550px){
@@ -89,7 +90,28 @@
 
             .logoplaygoogle{
                 margin-bottom: 20px;
+                margin-right: 0;
             }
+
+            .clients {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+            }
+
+            .next{
+                top: 0 !important;
+            }
+
+            .prev{
+                top: 0 !important;
+            }
+
+            .sis {
+            margin-bottom: 15px;
+            justify-content: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
 
         }
 
@@ -138,14 +160,10 @@
         }
 
         .sept {
-            width: 85px;
+            min-width: 67px;
             height: 55px;
-            float: left;
-            margin-right: 20px;
-            border-right: 2px solid #006699;
-            margin-bottom: 25px;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
         }
 
@@ -212,6 +230,23 @@
             padding-right: 11px;
             font-weight: 600;
         }
+
+        .sis {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .sis p{
+            min-width: 180px;
+            margin: 0;
+        }
+
+        img.separation {
+         margin-right: 20px;
+         margin-left: 5px;
+        }
     </style>
 </head>
 
@@ -248,7 +283,7 @@
         <h2 class="text-center h3blue" style="margin-bottom: 20px;" data-aos="fade-down" data-aos-delay="550" data-aos-duration="1000">5 Ways The eFax Android App Works For You</h2>
         <p style="margin-bottom: 30px;" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1200">Now you can take your business on the run and close deals using your Android phone or tablet. Discover how the intuitive interface of the Android fax app lets you view, edit, sign and send a fax quickly and easily from any location.</p>
         <img class="logoplaygoogle" src="img/googleplaybutton.png" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1300">
-        <button class="btn btn-lg text-center btn-bg-main" type="button" style="margin-left: 20px;" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">Start Faxing Now</button>
+        <button class="btn btn-lg text-center btn-bg-main" type="button" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">Start Faxing Now</button>
             <img class="img-responsive" src="img/EfaxAndroidApp.png" style="margin: auto;margin-top: 40px;" data-aos="fade-up" data-aos-delay="150">
     </section>
 
@@ -262,22 +297,25 @@
                     <h3 class="h3blue">Send a Fax</h3>
                     <p style="margin-top: 20px;margin-bottom: 20px;">Being able to send a fax quickly and easily from your phone or tablet is a huge&nbsp;<br>time-saver.&nbsp;</p>
                     <div class="row iconmods">
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section1_icon1.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Fax on the go from anywhere</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section1_icon2.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Quickly send faxes with a few taps</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section1_icon3.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>No more looking for a fax machine to use</p>
                         </div>
                     </div>
@@ -300,22 +338,25 @@
                     <h3 class="h3blue">Sign a Fax</h3>
                     <p style="margin-top: 20px;margin-bottom: 20px;">Need a contract signed? The eFax app lets you conveniently sign faxes electronically.</p>
                     <div class="row iconmods">
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section2_icon1.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Sign fax documents anytime, anywhere</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section2_icon2.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Save signatures for later use</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section2_icon3.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>No printing or scanning required</p>
                         </div>
                     </div>
@@ -342,22 +383,25 @@
                     <h3 class="h3blue">Take a Photo and Fax</h3>
                     <p style="margin-top: 20px;margin-bottom: 20px;">Easily take pictures of documents with your Android’s built-in camera to fax them.</p>
                     <div class="row iconmods">
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section3_icon1.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>No need to find a scanner to use</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section3_icon2.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Photos automatically compress to send easily</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section3_icon3.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Works with phone and tablet cameras</p>
                         </div>
                     </div>
@@ -380,22 +424,25 @@
                     <h3 class="h3blue">Share Files</h3>
                     <p style="margin-top: 20px;margin-bottom: 20px;">The Android fax app is fully integrated with Dropbox, Google Drive and other third party cloud storage apps.</p>
                     <div class="row iconmods">
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section4_icon1.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>No extra steps to fax files from cloud storage</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section4_icon2.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Save time with easy access</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section4_icon3.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Avoid moving files around</p>
                         </div>
                     </div>
@@ -422,22 +469,25 @@
                     <h3 class="h3blue">Store Faxes Online</h3>
                     <p style="margin-top: 20px;margin-bottom: 20px;">Wherever you do business, your sent and received faxes can be accessed right from your Android phone or tablet using the eFax app.</p>
                     <div class="row iconmods">
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section5_icon1.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Faxes are stored for the life of your account</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section5_icon2.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>Tag faxes to easily search for them later</p>
                         </div>
-                        <div class="col-lg-6 col-md-12 text-left">
+                        <div class="col-lg-6 col-md-12 text-left sis">
                             <div class="sept">
                                 <img src="img/section5_icon3.png">
                             </div>
+                            <img class="separation" src="img/separacion.svg" alt="">
                             <p>No limit on the number of faxes saved</p>
                         </div>
                     </div>
